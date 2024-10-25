@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    /* Light text for dark mode */
 }
 
 .container {
@@ -14,7 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(200, 118, 200);
+    background-color: #121212;
+    /* Dark background for container */
     column-gap: 30px;
 }
 
@@ -24,7 +27,9 @@
     width: 100%;
     padding: 30px;
     border-radius: 6px;
-    background: #FFF;
+    background: #1e1e1e;
+    /* Dark background for form */
+    color: #e0e0e0;
 }
 
 .form.signup {
@@ -45,7 +50,8 @@
 header {
     font-size: 28px;
     font-weight: 600;
-    color: #232836;
+    color: #f5f5f5;
+    /* Light header text */
     text-align: center;
 }
 
@@ -74,11 +80,18 @@ form {
 .field input {
     outline: none;
     padding: 0 15px;
-    border: 1px solid#CACACA;
+    background-color: #333;
+    /* Dark input background */
+    color: #e0e0e0;
+    /* Light text color */
+    border: 1px solid #444;
+    /* Darker border */
 }
 
 .field input:focus {
     border-bottom-width: 2px;
+    border-color: #bb86fc;
+    /* Highlight for focused input */
 }
 
 .eye-icon {
@@ -94,13 +107,15 @@ form {
 
 .field button {
     color: #fff;
-    background-color: purple;
+    background-color: #bb86fc;
+    /* Purple button for dark mode */
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .field button:hover {
-    background-color: #016dcb;
+    background-color: #3700b3;
+    /* Darker hover for button */
 }
 
 .form-link {
@@ -112,11 +127,13 @@ form {
 .form-link a {
     font-size: 14px;
     font-weight: 400;
-    color: #232836;
+    color: #e0e0e0;
+    /* Light text for links */
 }
 
 .form a {
-    color: rgb(184, 110, 184);
+    color: #bb86fc;
+    /* Purple link for dark mode */
     text-decoration: none;
 }
 
@@ -129,7 +146,8 @@ form {
     height: 1px;
     width: 100%;
     margin: 36px 0;
-    background-color: #d4d4d4;
+    background-color: #444;
+    /* Darker line */
 }
 
 .line::before {
@@ -138,7 +156,8 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFF;
+    background-color: #1e1e1e;
+    /* Match the form background */
     color: #8b8b8b;
     padding: 0 15px;
 }
@@ -151,13 +170,14 @@ form {
 
 a.facebook {
     color: #fff;
-    background-color: purple;
+    background-color: #3b5998;
+    /* Facebook blue for dark mode */
 }
 
 a.facebook .facebook-icon {
     height: 28px;
     width: 28px;
-    color: purple;
+    color: #3b5998;
     font-size: 20px;
     border-radius: 50%;
     display: flex;
@@ -181,13 +201,15 @@ img.google-img {
 }
 
 a.google {
-    border: 1px solid #CACACA;
+    border: 1px solid #444;
+    /* Darker border for Google button */
 }
 
 a.google span {
     font-weight: 500;
     opacity: 0.6;
-    color: #232836;
+    color: #e0e0e0;
+    /* Light text color for Google */
 }
 
 @media screen and (max-width: 400px) {
