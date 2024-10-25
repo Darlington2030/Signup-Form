@@ -59,6 +59,7 @@ To use this project locally:
 ## Credits
 
 This project was created by [Darlington Maloba](https://github.com/Darlington2030/Signup-Form). Icons are provided by [Boxicons](https://boxicons.com/).
+The project is supervised by [AfricanStemGirlHub](africanstemgirl@gmail.com)
 
 ## License
 
