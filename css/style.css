@@ -1,14 +1,19 @@
 /* Google Fonts - Poppins */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset styles for all elements */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #e0e0e0;
-    /* Light text for dark mode */
 }
+
+
+/* Centered container covering the full viewport height */
 
 .container {
     height: 100vh;
@@ -21,6 +26,9 @@
     column-gap: 30px;
 }
 
+
+/* Form styling with dark background and light text */
+
 .form {
     position: absolute;
     max-width: 430px;
@@ -28,24 +36,35 @@
     padding: 30px;
     border-radius: 6px;
     background: #1e1e1e;
-    /* Dark background for form */
     color: #e0e0e0;
 }
+
+
+/* Style for hidden sign-up form */
 
 .form.signup {
     opacity: 0;
     pointer-events: none;
 }
 
+
+/* Display settings for sign-up form when active */
+
 .forms.show-signup .form.signup {
     opacity: 1;
     pointer-events: auto;
 }
 
+
+/* Hide login form when sign-up form is active */
+
 .forms.show-signup .form.login {
     opacity: 0;
     pointer-events: none;
 }
+
+
+/* Header styling with light color */
 
 header {
     font-size: 28px;
@@ -55,9 +74,15 @@ header {
     text-align: center;
 }
 
+
+/* Margin above form content */
+
 form {
     margin-top: 30px;
 }
+
+
+/* Styling for form fields */
 
 .form .field {
     position: relative;
@@ -66,6 +91,9 @@ form {
     margin-top: 20px;
     border-radius: 6px;
 }
+
+
+/* Common style for input and button elements inside .field */
 
 .field input,
 .field button {
@@ -76,6 +104,9 @@ form {
     font-weight: 400;
     border-radius: 6px;
 }
+
+
+/* Input field styling */
 
 .field input {
     outline: none;
@@ -88,11 +119,17 @@ form {
     /* Darker border */
 }
 
+
+/* Style for focused input field */
+
 .field input:focus {
     border-bottom-width: 2px;
     border-color: #bb86fc;
     /* Highlight for focused input */
 }
+
+
+/* Icon styling inside input fields */
 
 .eye-icon {
     position: absolute;
@@ -105,6 +142,9 @@ form {
     padding: 5px;
 }
 
+
+/* Button styling with purple background */
+
 .field button {
     color: #fff;
     background-color: #bb86fc;
@@ -113,15 +153,24 @@ form {
     cursor: pointer;
 }
 
+
+/* Darker button background on hover */
+
 .field button:hover {
     background-color: #3700b3;
     /* Darker hover for button */
 }
 
+
+/* Centered link styling */
+
 .form-link {
     text-align: center;
     margin-top: 10px;
 }
+
+
+/* Link text styling */
 
 .form-link span,
 .form-link a {
@@ -131,15 +180,23 @@ form {
     /* Light text for links */
 }
 
+
+/* Purple link styling */
+
 .form a {
     color: #bb86fc;
-    /* Purple link for dark mode */
     text-decoration: none;
 }
+
+
+/* Underline link on hover */
 
 .form-content a:hover {
     text-decoration: underline;
 }
+
+
+/* Line separator styling */
 
 .line {
     position: relative;
@@ -149,6 +206,9 @@ form {
     background-color: #444;
     /* Darker line */
 }
+
+
+/* "Or" text styling inside line separator */
 
 .line::before {
     content: 'Or';
@@ -162,17 +222,26 @@ form {
     padding: 0 15px;
 }
 
+
+/* Media options styling */
+
 .media-options a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+/* Facebook button styling */
+
 a.facebook {
     color: #fff;
     background-color: #3b5998;
     /* Facebook blue for dark mode */
 }
+
+
+/* Facebook icon styling */
 
 a.facebook .facebook-icon {
     height: 28px;
@@ -186,6 +255,9 @@ a.facebook .facebook-icon {
     background-color: #fff;
 }
 
+
+/* Shared styling for icons inside social buttons */
+
 .facebook-icon,
 img.google-img {
     position: absolute;
@@ -194,16 +266,25 @@ img.google-img {
     transform: translateY(-50%);
 }
 
+
+/* Google icon styling */
+
 img.google-img {
     height: 20px;
     width: 20px;
     object-fit: cover;
 }
 
+
+/* Google button styling */
+
 a.google {
     border: 1px solid #444;
     /* Darker border for Google button */
 }
+
+
+/* Google button text styling */
 
 a.google span {
     font-weight: 500;
@@ -211,6 +292,9 @@ a.google span {
     color: #e0e0e0;
     /* Light text color for Google */
 }
+
+
+/* Responsive styling for smaller screens */
 
 @media screen and (max-width: 400px) {
     .form {

@@ -38,6 +38,8 @@ links.forEach(link => {
     });
 });
 
+
+
 // Password validation rule: allowing special characters
 const passwordPattern = /^(?=.*[a-z])(?=.*\d)[a-zA-Z\d\W]{8,}$/; // Lowercase, digit, at least 8 characters, allows special characters
 
