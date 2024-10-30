@@ -42,26 +42,12 @@
 
 /* Style for hidden sign-up form */
 
+
+/* 
 .form.signup {
     opacity: 0;
     pointer-events: none;
-}
-
-
-/* Display settings for sign-up form when active */
-
-.forms.show-signup .form.signup {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-/* Hide login form when sign-up form is active */
-
-.forms.show-signup .form.login {
-    opacity: 0;
-    pointer-events: none;
-}
+} */
 
 
 /* Header styling with light color */

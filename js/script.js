@@ -31,12 +31,29 @@ pwShowHide.forEach(eyeIcon => {
 });
 
 // Toggle between forms (login <-> signup)
-links.forEach(link => {
-    link.addEventListener("click", e => {
-        e.preventDefault();
-        forms.classList.toggle("show-signup");
-    });
+// links.forEach(link => {
+//     link.addEventListener("click", e => {
+//         e.preventDefault();
+//         forms.classList.toggle("show-signup");
+//     });
+// });
+
+function showSignup() {
+    document.querySelector('.login').style.display = 'none';
+    document.querySelector('.signup').style.display = 'block';
+}
+
+function showLogin() {
+    document.querySelector('.signup').style.display = 'none';
+    document.querySelector('.login').style.display = 'block';
+}
+
+// Initial setup to display the login form by default and hide the signup form
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.login').style.display = 'block';
+    document.querySelector('.signup').style.display = 'none';
 });
+
 
 
 
